@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style2.css" />
+    <script src="file5.js" defer></script>
     <title>web page using html and css</title>
   </head>
   <body>
@@ -11,13 +12,13 @@
       <nav class="nav container">
         <h1 class="logo">Website</h1>
         <ul class="nav-items">
-          <li>
-            <a href="">Home</a>
+          <li class="nav-item">
+            <a href="#home">Home</a>
           </li>
-          <li>
+          <li class="nav-item">
             <a href="">Todo</a>
           </li>
-          <li>
+          <li class="nav-item">
             <a href="">Sign up</a>
           </li>
         </ul>
@@ -30,32 +31,42 @@
     <section class="todo-section container">
       <h2>Your plan for today ?</h2>
       <form class="form-todo">
-        <input type="text" placeholder="Add Todo" id="" />
+        <input type="text" name="" id="" placeholder="Add Todo" />
         <input type="submit" class="btn" />
       </form>
+      <ul class="todo-list">
+        <!-- <li class="first-todo">todo 1</li> -->
+        <li>
+          <span class="text">Do this do that</span>
+          <div class="todo-button">
+            <button class="todo-btn done">Done</button>
+            <button class="todo-btn remove">Remove</button>
+          </div>
+        </li>
+      </ul>
     </section>
     <section class="section-signup container">
       <h2>Sign Up</h2>
       <form class="signup-form">
         <div class="form-group">
           <label for="username">Username</label>
-          <input type="text" name="" id="" placeholder="" />
+          <input type="text" name="" id="username" placeholder="" />
         </div>
         <div class="form-group">
           <label for="password">Password</label>
-          <input type="password" name="" id="" placeholder="" />
+          <input type="password" name="" id="password" placeholder="" />
         </div>
         <div class="form-group">
           <label for="confirmpassword">Confirm password</label>
-          <input type="text" name="" id="" placeholder="" />
+          <input type="text" name="" id="confirmpassword" placeholder="" />
         </div>
         <div class="form-group">
           <Pabel for="phone">Phone</Pabel>
-          <input type="text" name="" id="" placeholder="" />
+          <input type="text" name="" id="phone" placeholder="" />
         </div>
         <div class="form-group">
           <Eabel for="email">Email</Eabel>
-          <input type="text" name="" id="" placeholder="" />
+          <input type="text" name="" id="email" placeholder="" />
         </div>
         <div class="form-group">
           <label for="about">About Yourself</label>
